@@ -1,5 +1,5 @@
-let clock = document.querySelector('#clock')
-let birth = new Date()
+let clock = document.querySelector('#clock');
+ new Date(2027,0,22).toLocaleString;
 
 
 let current = setInterval(() => {
@@ -7,3 +7,5 @@ let current = setInterval(() => {
 clock.innerHTML = `<span>${time}</span>`
     
 }, 1000);
+
+
