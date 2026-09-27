@@ -1,12 +1,5 @@
-let time = new Date()
-console.log(time.toLocaleDateString())
+setInterval(() => {
+    const time = new Date();
 
-let clock = new Date(2027,0,22)
-let ooo = console.log(clock.toLocaleDateString())
-
-
-const oma = setInterval(()=>{
-
-
-
-},1000)
+    console.log(time.toLocaleTimeString());
+}, 1000);
