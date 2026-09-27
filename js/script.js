@@ -10,6 +10,11 @@ let diff = Number(jonmo)- Number(time);
 
 let baki = document.querySelector('#baki')
 baki.innerHTML = Math.floor(diff /1000)
+
+console.log( Math.floor(diff /1000) /86400)
+
+
+
     
 }, 1000);
 
