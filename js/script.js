@@ -1,4 +1,6 @@
 let clock = document.querySelector('#clock')
+let birth = new Date()
+
 
 let current = setInterval(() => {
     const time = new Date().toLocaleTimeString();
