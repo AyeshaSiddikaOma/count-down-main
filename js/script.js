@@ -1,11 +1,18 @@
 let clock = document.querySelector('#clock');
- new Date(2027,0,22).toLocaleString;
+let jonmo =  new Date(2027,0,22);
 
 
 let current = setInterval(() => {
-    const time = new Date().toLocaleTimeString();
-clock.innerHTML = `<span>${time}</span>`
+    const time = new Date();
+clock.innerHTML = `<span>${time.toLocaleString()}</span>`
+
+let diff = Number(jonmo)- Number(time);
+
+let baki = document.querySelector('#baki')
+baki.innerHTML = Math.floor(diff /1000)
     
 }, 1000);
+
+
 
 
