@@ -1,6 +1,6 @@
 let clock = document.querySelector('#clock')
 
-setInterval(() => {
+let current = setInterval(() => {
     const time = new Date().toLocaleTimeString();
 clock.innerHTML = `<span>${time}</span>`
     
