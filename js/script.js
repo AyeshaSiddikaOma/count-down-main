@@ -72,8 +72,23 @@ let index = 0;
 const count = setInterval( () =>{
 index++
 head.innerHTML = `\r${index}`
-if (index == 22) {
+if (index === 22) {
     clearInterval(count)
+}
+
+},100)
+
+
+
+
+let mas = document.querySelector('#ayesha')
+
+let i = 0;
+const counts = setInterval( () =>{
+index++
+mas.innerHTML = `\r${i}`
+if (i == 1) {
+    clearInterval(counts)
 }
 
 },100)
