@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #050505;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 50px 40px;
+
+    background: #0b0b0b;
+    border: 1px solid #00a6a6;
+    border-radius: 20px;
+
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.12);
+}
+
+h1 {
+    color: #00eeee;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.countdown span {
+    width: 130px;
+    padding: 20px 10px;
+
+    background: #111;
+    border: 1px solid #008b8b;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    color: #888;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.countdown b {
+    color: #00eeee;
+    font-size: 32px;
+}
+
+.container > h2 {
+    margin: 40px 0 25px;
+    color: #aaa;
+    font-size: 25px;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.date h2 {
+    width: 150px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #111;
+    border: 1px solid #008b8b;
+    border-radius: 15px;
+
+    color: #00eeee;
+    font-size: 40px;
+
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.08);
+}
