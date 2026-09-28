@@ -76,19 +76,21 @@ if (index === 22) {
     clearInterval(count)
 }
 
-},100)
+},100);
 
 
 
 
-let mas = document.querySelector('#ayesha')
+let yy = document.querySelector('#ayesha')
 
-let i = 0;
-const counts = setInterval( () =>{
-index++
-mas.innerHTML = `\r${i}`
-if (i == 1) {
-    clearInterval(counts)
+let i = 2000;
+const counter = setInterval( () =>{
+i++
+yy.innerHTML = `\r${i}`
+if (i === 2027) {
+    clearInterval(counter)
 }
 
 },100)
+
+
