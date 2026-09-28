@@ -1,37 +1,50 @@
-let clock = document.querySelector('#clock');
-let jonmo =  new Date(2027,0,22);
-
+let clock = document.querySelector("#clock");
+let jonmo = new Date(2027, 0, 22);
 
 let current = setInterval(() => {
-    const time = new Date();
-clock.innerHTML = `<span>${time.toLocaleString()}</span>`
+  const time = new Date();
 
-let diff = Number(jonmo)- Number(time);
+  let diff = Number(jonmo) - Number(time);
 
-
-// MiliSecond
-let baki = document.querySelector('#baki')
-baki.innerHTML = Math.floor(diff /1000)
+  let second = diff / 1000;
 
 
-// days
-let days = Math.floor(diff /1000) /86400
-let day =  document.querySelector('#days')
-day.innerHTML = (days)
+  if(second <= 0){
+    clearInterval(current)
+  }
 
+  
+let years = jonmo.getFullYear() - time.getFullYear()
 
-// hour
-let due =  Math.floor(diff /1000)-10022400;
-let hour = due/1440
+let months = jonmo.getMonth() - time.getMonth()
 
-console.log(hour)
+let days = jonmo.getDay() - time.getDay()
 
 
 
+    if (days < 0) {
+        months--;
+        days += new Date(now.getFullYear(),now.getMonth() + 1,0).getDate();
+    }
 
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    let hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+
+    let minutes = Math.floor((diff / (1000 * 60)) % 60);
+
+    let seconds = Math.floor((diff / 1000) % 60);
+
+
+let total = document.querySelector('#total')
+    total.innerHTML = `${ years},${months} ,${ days},${hours} ,${minutes},${seconds}  `
+       
     
+
+
+
+
 }, 1000);
-
-
-
-
